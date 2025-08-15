@@ -44,6 +44,8 @@ h1 {
   padding: 0;
   cursor: pointer;
   margin-top: -30px;
+  -webkit-tap-highlight-color: transparent;
+}
 }
 .container {
   display: flex;
@@ -76,6 +78,5 @@ h1 {
   }
 
 }
-.kittyButton:focus {
-  outline: none;
-}
+
+
