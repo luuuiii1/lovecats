@@ -74,4 +74,8 @@ h1 {
     opacity: 0;
     transform: translate(calc(-50% + var(--x)), calc(-50% + var(--y))) scale(1.5);
   }
+
+}
+.kittyButton:focus {
+  outline: none;
 }
