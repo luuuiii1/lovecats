@@ -44,7 +44,6 @@ h1 {
   padding: 0;
   cursor: pointer;
   margin-top: -30px;
-  -webkit-tap-highlight-color: transparent;
 }
 }
 .container {
@@ -77,6 +76,9 @@ h1 {
     transform: translate(calc(-50% + var(--x)), calc(-50% + var(--y))) scale(1.5);
   }
 
+}
+.kittyButton {
+  -webkit-tap-highlight-color: transparent;
 }
 
 
