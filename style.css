@@ -1,0 +1,77 @@
+@font-face {
+  font-family: 'HelloKittyBold';
+  src: url('Boldins.ttf') format('truetype');
+}
+body {
+    font-family: 'HelloKittyBold', sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+body {
+    background-color: pink;
+}
+h1 {
+  font-size: 60px;
+  color: #ef4499;
+  text-shadow: 2px 2px #ffc0cb;
+  font-family: 'HelloKittyBold', sans-serif;
+  text-align: center;      
+  margin-top: -20px;    
+}
+.kittyButton {
+  background: none;      
+  border: none;         
+  padding: 0;          
+  cursor: pointer;      
+  outline: none;         
+}
+@keyframes squish {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(0.85); }
+  100% { transform: scale(1); }
+}
+
+.clicked {
+  animation: squish 0.2s ease;
+}
+.helloKittyImage.clicked {
+  transform: scale(0.90);
+  transition: transform 0.1s ease;
+}
+.kittyButton {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  margin-top: -30px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;     
+  justify-content: center;
+  min-height: 100vh;       
+}
+.helloKittyImage {
+  width: 450px;
+  height: auto;
+  display: block;
+}
+.Ribbon {
+  position: absolute;
+  font-size: 50px;
+  pointer-events: none;
+  animation: burst 1s ease-out forwards;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes burst {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(calc(-50% + var(--x)), calc(-50% + var(--y))) scale(1.5);
+  }
+}
